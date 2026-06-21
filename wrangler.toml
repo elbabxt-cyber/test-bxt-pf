@@ -8,7 +8,7 @@ pages_build_output_dir = "dist"
 [[d1_databases]]
 binding = "DB"
 database_name = "portfolio-db"
-database_id = "local-placeholder-replace-after-deploy"
+database_id = "76078a06-9952-49dd-aa51-69bd89e6bfd8"
 
 # ── R2 (이미지/영상 원본) ───────────────────────────────────
 # 배포 전 `wrangler r2 bucket create portfolio-media` 로 생성하세요.
