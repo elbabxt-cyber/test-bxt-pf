@@ -1,0 +1,3 @@
+# SPA fallback: /api/* 는 Functions 가 먼저 처리하고,
+# 나머지 경로는 index.html 로 보내 React Router 가 처리하게 한다.
+/* /index.html 200

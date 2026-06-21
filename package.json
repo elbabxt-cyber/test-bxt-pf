@@ -1,0 +1,25 @@
+{
+  "name": "byeon-gayun-portfolio",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite build && concurrently -k -n vite,cf \"vite build --watch\" \"wrangler pages dev\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "db:local": "wrangler d1 execute DB --local --file=./schema.sql",
+    "db:remote": "wrangler d1 execute DB --remote --file=./schema.sql"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^10.0.3",
+    "vite": "^5.4.8",
+    "wrangler": "^3.78.0"
+  }
+}

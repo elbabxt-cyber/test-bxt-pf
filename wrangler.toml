@@ -1,0 +1,21 @@
+name = "byeon-gayun-portfolio"
+compatibility_date = "2024-09-23"
+pages_build_output_dir = "dist"
+
+# ── D1 (프로젝트 메타데이터) ────────────────────────────────
+# 배포 전 `wrangler d1 create portfolio-db` 로 만든 뒤
+# 출력된 database_id 를 아래에 넣으세요. 로컬 dev 는 이 값과 무관하게 동작합니다.
+[[d1_databases]]
+binding = "DB"
+database_name = "portfolio-db"
+database_id = "local-placeholder-replace-after-deploy"
+
+# ── R2 (이미지/영상 원본) ───────────────────────────────────
+# 배포 전 `wrangler r2 bucket create portfolio-media` 로 생성하세요.
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "portfolio-media"
+
+# ── 환경변수 ────────────────────────────────────────────────
+# ADMIN_PASSWORD 는 로컬은 .dev.vars, 운영은
+# `wrangler pages secret put ADMIN_PASSWORD` 로 설정합니다.
